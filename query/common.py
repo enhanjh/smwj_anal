@@ -13,12 +13,3 @@ prd_bind = 'mysql+mysqlconnector://' + prd_scott + ':' + prd_tiger + '@' + prd_h
 # dev_bind = 'mysql+mysqlconnector://' + dev_scott + ':' + dev_tiger + '@' + dev_host + ':3306/smwj'
 prd_engine = create_engine(prd_bind)
 # dev_engine = create_engine(dev_bind)
-
-
-item_price = "select a.item" \
-             "     , a.tran_day" \
-             "     , a.open" \
-             "     , a.close" \
-             "  from price a" \
-             " where a.item = '{item}'" \
-             "   and a.tran_day between '{sdate}' and '{edate}';"
