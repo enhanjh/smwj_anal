@@ -6,7 +6,7 @@ import datetime as dt
 import urllib.request as req
 import urllib.parse as pars
 import const.stat as ic
-import framework.forecast as fc
+import analysis.forecast as fc
 import interface.bot as bot
 import xml.etree.ElementTree as et
 from logging.handlers import TimedRotatingFileHandler
@@ -51,7 +51,7 @@ class Operator:
         formatter = logging.Formatter('[%(levelname)s:%(lineno)s] %(asctime)s > %(message)s')
         self.logger = logging.getLogger()
 
-        fh = TimedRotatingFileHandler("C:\SMWJ_LOG\\framework", when="midnight")
+        fh = TimedRotatingFileHandler("C:\SMWJ_LOG\\analysis", when="midnight")
         fh.setFormatter(formatter)
         fh.suffix = "_%Y%m%d.log"
 
