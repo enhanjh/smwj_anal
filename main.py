@@ -6,7 +6,7 @@ import datetime as dt
 import urllib.request as req
 import urllib.parse as pars
 import const.stat as ic
-import analysis.forecast as fc
+import analysis.rebalance.forecast as fc
 import interface.bot as bot
 import xml.etree.ElementTree as et
 from logging.handlers import TimedRotatingFileHandler
